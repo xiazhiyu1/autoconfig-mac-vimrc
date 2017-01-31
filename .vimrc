@@ -160,11 +160,11 @@
   set noswapfile        设置无交换文件
   set nowritebackup   备份相关
   set iskeyword-=_,.,=,-,:,  意思是使得'_,.,=,-,:,'不是单词的一部分，于是成为单词的边界。
-  set foldmethod=indent
+  set foldmethod=indent  折叠设置
   set tabstop=2  softtabstop=2 shiftwidth=2 expandtab
-  set guifont=Source\ Code\ Pro\ for\ Powerline:h16 
-  set autoread
-  set wildignore=*.o,*~,*.pyc,*.swp,*.bak,*.class
+  set guifont=Source\ Code\ Pro\ for\ Powerline:h16  设置字体
+  set autoread    "当文件在外部被修改，自动更新该文件
+  set wildignore=*.o,*~,*.pyc,*.swp,*.bak,*.class     tab键的自动完成现在会忽略这些
   if has("win16") || has("win32")
     set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.DS_Store
   else
