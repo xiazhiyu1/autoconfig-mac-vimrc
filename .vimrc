@@ -134,7 +134,7 @@
 "}
 
 "{Basic settings
-  set nospell
+  set nospell                －关闭拼写检查功能
   set nu
   set relativenumber
   set ffs=unix,dos,mac
@@ -156,10 +156,10 @@
       set clipboard=unnamed
     endif
   endif
-  set nobackup
-  set noswapfile
-  set nowritebackup
-  set iskeyword-=_,.,=,-,:,
+  set nobackup        不生成备份文件  
+  set noswapfile        设置无交换文件
+  set nowritebackup   备份相关
+  set iskeyword-=_,.,=,-,:,  意思是使得'_,.,=,-,:,'不是单词的一部分，于是成为单词的边界。
   set foldmethod=indent
   set tabstop=2  softtabstop=2 shiftwidth=2 expandtab
   set guifont=Source\ Code\ Pro\ for\ Powerline:h16 
