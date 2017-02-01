@@ -170,11 +170,12 @@
   else
     set wildignore+=.git\*,.hg\*,.svn\*
   endif
-  set lazyredraw      " don't update the display while executing macros
+  set lazyredraw      " don't update the display while executing macros "在执行宏命令时，不进行显示重绘；
+                                                                          在宏命令执行完成后，一次性重绘，以便提高性能
   set switchbuf=useopen           " reveal already opened files from the
-                                  " quickfix window instead of opening new
+                                  " quickfix window instead of opening new  "显示已打开窗口，快速修复缓冲区，而不是打开新文件
                                   " buffers
-  set wildmenu
+  set wildmenu   " 命令模式下补全以菜单形式显示
   set copyindent
   set wildmode=list:longest,full
   set whichwrap=b,s,h,l,<,>,>h,[,]   " Backspace and cursor keys wrap too
